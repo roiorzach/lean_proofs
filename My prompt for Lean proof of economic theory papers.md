@@ -13,8 +13,11 @@ Results build on different things, so one result being broken, wrong or stuck is
 - If a result looks false, try to find a counterexample.
 - At the end, tell me which results are fully proved, which are proved only conditional on something else, and which are unproved.
 
+PROOFS
+The best lean proof is different from the best proof for a manuscript. If while trying to prove a result in lean you discover a shorter more concise proof for the manuscript please feel free to suggest this path. If the shortcut you are taking is simply to make the lean proofs shorter/simpler and does not provide a benefit to the manuscript, then try to follow the proof direction of the manuscript as closely as possible.
+
 DO NOT OVERLOAD MY COMPUTER
-This is a Mac with 24 GB of RAM, and each Lean process that loads Mathlib uses about 5 GB. Running out of memory freezes the whole machine.
+This is a Mac with 16 GB of RAM, and each Lean process that loads Mathlib uses about 5 GB. Running out of memory freezes the whole machine.
 - Download prebuilt Mathlib with `lake exe cache get`. Never compile Mathlib itself.
 - Run one Lean command at a time, and do not start another until it finishes.
 - Prefer specific Mathlib imports over `import Mathlib`.
@@ -37,4 +40,4 @@ Do not edit the .tex file. Create one README.md next to the manuscript, outside 
 - a one-line reason
 - the matching Lean theorem
 
-Each edit should change a clause or a sentence, not a whole section. Leave out anything a careful reader would not object to. Tell me about any small tweaks you made in your final message, not in the README.
+Each edit should change a clause or a sentence, not a whole section. Leave out anything a careful reader would not object to. Tell me about any small tweaks you made in your final message, not in the README. When you are done commit to GitHub.
