@@ -1,0 +1,16 @@
+name = "ManagerialIntervention"
+version = "0.1.0"
+defaultTargets = ["ManagerialIntervention"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+linter.unusedSectionVars = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "ManagerialIntervention"
